@@ -31,7 +31,7 @@
             </div>
             <div class="flex justify-end flex-row gap-8">
                 <div class="max-w-[240px]">
-                    <img src="../../assets/images/aulas-icone-design.svg" alt="" />
+                    <img src="" alt="" />
                     <h3 class="my-3 mb-1">Design</h3>
                     <p class="opacity-80">
                         Conceitos de Design Visual, Experiência de Usuário, Figma e
@@ -39,7 +39,7 @@
                     </p>
                 </div>
                 <div class="max-w-[240px]">
-                    <img src="../../assets/images/aulas-icone-codigo.svg" alt="" />
+                    <img src="" alt="" />
                     <h3 class="my-3 mb-1">Desenvolvimento</h3>
                     <p class="opacity-80">
                         Desenvolva o projeto do zero e aprenda cada conceito de
@@ -47,7 +47,7 @@
                     </p>
                 </div>
                 <div class="max-w-[240px]">
-                    <img src="../../assets/images/aulas-icone-animacoes.svg" alt="" />
+                    <img src="" alt="" />
                     <h3 class="my-3 mb-1">Animações</h3>
                     <p class="opacity-80">
                         Aprenda de forma simples a como criar animações incríveis e
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <!-- .divDev -->
+    
         <div class="absolute inset-0 z-10 flex gap-10 w-full flex-row justify-between items-center px-[6vw] pt-[480px]">
             <div class="flex justify-end flex-row gap-8">
                 <div class="max-w-[240px]">
@@ -174,6 +174,14 @@
 import { onMounted } from 'vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Importar assets SVG usando sintaxe Vite
+// import aulasIconeDesign from '../../assets/images/aulas-icone-design.svg?url';
+// import aulasIconeCodigo from '../../assets/images/aulas-icone-codigo.svg?url';
+// import aulasIconeAnimacoes from '../../assets/images/aulas-icone-animacoes.svg?url';
+// import aulasIconeCertificado from '../../assets/images/aulas-icone-certificado.svg?url';
+// import aulasIconeSuporte from '../../assets/images/aulas-icone-suporte.svg?url';
+// import aulasIconeWpp from '../../assets/images/aulas-icone-wpp.svg?url';
 
 gsap.registerPlugin(ScrollTrigger);
 
