@@ -1,5 +1,5 @@
 <template>
-<section class="w-full relative sec1 h-screen flex flex-row justify-between pb-[12%] overflow-hidden">
+<section class="w-full relative sec1 min-h-dvh flex flex-row justify-between pb-[12%] overflow-hidden">
 
     <div
         class="absolute inset-0 w-full h-full z-[1] bg-gradient-to-b from-[rgba(12,1,2,0)] from-[70.74%] to-[#0c0102]">
