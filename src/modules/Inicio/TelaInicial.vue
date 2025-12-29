@@ -48,7 +48,7 @@
     </div>
 
     <div
-        class="container-direita z-[2] absolute bottom-8 left-4 right-4 md:bottom-auto md:top-[19%] md:left-auto md:right-[7%] flex flex-col items-start md:items-end gap-4 md:gap-10 w-auto md:w-[23%] md:min-w-[330px] px-4 md:px-0">
+        class="container-direita z-[2] absolute bottom-11 left-4 right-4 md:bottom-auto md:top-[19%] md:left-auto md:right-[7%] flex flex-col items-start md:items-end gap-4 md:gap-10 w-auto md:w-[23%] md:min-w-[330px] px-4 md:px-0">
         <img src="../../assets/images/tecnologias-icone.svg" alt="tecnologias"
             class="tecnologias-icone opacity-70 h-8 md:h-12">
         <p
