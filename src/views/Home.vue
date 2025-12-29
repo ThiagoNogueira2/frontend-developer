@@ -3,8 +3,9 @@
       <div id="smooth-content">
          <TelaInicial />
          
-         <MonsterParallax />
+        
          <Centro />
+          <MonsterParallax />
          <Footer />
       </div>
    </div>
