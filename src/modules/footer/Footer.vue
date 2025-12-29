@@ -22,10 +22,10 @@
    position: absolute;
    top: 0;
    left: 0;
-   width: 100%;
-   height: 420px;
-   min-height: 420px;
-   max-height: 420px;
+   width: 100vw;
+   height: 500px;
+   min-height: 440px;
+   max-height: 440px;
    background-color: #0c0102;
    z-index: 2;
    box-sizing: border-box;

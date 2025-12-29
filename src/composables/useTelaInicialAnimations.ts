@@ -24,14 +24,36 @@ export function useTelaInicialAnimations() {
  
     const textos = document.querySelectorAll('.texto-animado');
     textos.forEach((texto) => {
+      const svg = texto.querySelector('svg');
+      if (svg) {
+        gsap.from(svg, {
+          y: 20,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power4.out',
+          delay: 0.5
+        });
+        return;
+      }
+
+   
       const content = texto.textContent || '';
       const chars = content.split('');
       
+  
+      const childSpan = texto.querySelector('span');
+      const spanClasses = childSpan ? childSpan.className : '';
+      
+  
+      const originalClasses = texto.className;
+      
       texto.innerHTML = '';
+      texto.className = originalClasses; 
       
       chars.forEach((char) => {
         const span = document.createElement('span');
         span.textContent = char === ' ' ? '\u00A0' : char;
+        span.className = spanClasses; 
         span.style.display = 'inline-block';
         span.style.opacity = '0';
         span.style.transform = 'translateY(100%)';
