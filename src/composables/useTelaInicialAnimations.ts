@@ -84,6 +84,7 @@ export function useTelaInicialAnimations() {
     });
 
     
+    // Parallax otimizado com scrub suave (0.5 suaviza mais que true)
     gsap.to('.bg1', {
       y: '20%',
       ease: 'none',
@@ -91,7 +92,7 @@ export function useTelaInicialAnimations() {
         trigger: '.sec1',
         start: 'top top',
         end: 'bottom top',
-        scrub: true
+        scrub: 0.5
       }
     });
 
@@ -102,7 +103,7 @@ export function useTelaInicialAnimations() {
         trigger: '.sec1',
         start: 'top top',
         end: 'bottom top',
-        scrub: true
+        scrub: 0.5
       }
     });
   };

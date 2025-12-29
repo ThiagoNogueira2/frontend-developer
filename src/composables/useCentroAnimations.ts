@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 export function useCentroAnimations() {
   const initAnimations = () => {
   
+    // Parallax único otimizado - removemos duplicação de triggers
     gsap.fromTo('.img-contraste',
       {
         y: '-20%'
@@ -18,22 +19,10 @@ export function useCentroAnimations() {
           trigger: '.section-contraste',
           start: 'top bottom',
           end: 'bottom top',
-          scrub: true
+          scrub: 0.5
         }
       }
     );
-
-    
-    gsap.from('.img-contraste', {
-      duration: 1.5,
-      ease: 'power2.inOut',
-      scrollTrigger: {
-        trigger: '.section-contraste',
-        start: 'top 80%',
-        end: 'top 50%',
-        scrub: true
-      }
-    });
   };
 
   onMounted(() => {
