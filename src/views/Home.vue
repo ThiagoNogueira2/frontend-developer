@@ -2,8 +2,9 @@
    <div id="smooth-wrapper">
       <div id="smooth-content">
          <TelaInicial />
-         <Centro />
+         
          <MonsterParallax />
+         <Centro />
          <Footer />
       </div>
    </div>
