@@ -13,7 +13,7 @@
 import { onMounted } from 'vue';
 import TelaInicial from '../modules/Inicio/TelaInicial.vue';
 import Centro from '../modules/Desenvolvimento/Centro.vue';
-// import MonsterParallax from '../modules/Desenvolvimento/MonsterParallax.vue';
+import MonsterParallax from '../modules/Desenvolvimento/MonsterParallax.vue';
 // import Footer from '../modules/footer/Footer.vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
