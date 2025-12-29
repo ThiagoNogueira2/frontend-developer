@@ -3,7 +3,7 @@
         <div class="relative overflow-hidden">
             <img 
                 data-speed="0.8" 
-                src="../../assets/images/fundo.jpg" 
+                src="../../assets/images/Teste.webp" 
                 alt="contraste"
                 class="img-contraste w-full h-[400px] md:h-[600px] lg:h-[800px] xl:h-[1000px] object-cover"
             >
