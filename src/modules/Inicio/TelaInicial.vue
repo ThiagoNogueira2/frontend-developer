@@ -48,9 +48,9 @@
     </div>
 
     <div
-        class="container-direita z-[2] absolute bottom-19 left-4 right-4 md:bottom-auto md:top-[21%] md:left-auto md:right-[7%] flex flex-col items-start md:items-end gap-4 md:gap-10 w-auto md:w-[23%] md:min-w-[330px] px-4 md:px-0 pt-4">
+        class="container-direita z-[2] absolute bottom-17 left-4 right-4 md:bottom-auto md:top-[21%] md:left-auto md:right-[7%] flex flex-col items-start md:items-end gap-4 md:gap-10 w-auto md:w-[23%] md:min-w-[330px] px-4 md:px-0">
         <img src="../../assets/images/tecnologias-icone.svg" alt="tecnologias"
-            class="tecnologias-icone opacity-70 h-8 md:h-12">
+            class="tecnologias-icone opacity-70 h-8 md:h-16">
         <p
             class="texto-animado texto-direita font-subtitle text-sm md:text-[clamp(16px,1.3vw,1.3vw)] font-light text-white text-left md:text-right opacity-80 overflow-hidden max-w-full md:max-w-none">
             Vamos construir esse projeto do zero em 4 aulas, passando do design ao desenvolvimento, do básico ao
