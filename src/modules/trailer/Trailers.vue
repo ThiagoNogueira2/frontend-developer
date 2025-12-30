@@ -99,29 +99,32 @@
 
       </div>
 
-      <!-- SETA -->
-      <div
-        class="absolute right-0 top-0 bottom-0
-               w-16 sm:w-24 lg:w-32
-               bg-gradient-to-l from-black via-black/60 to-transparent
-               flex items-center justify-end pr-2 sm:pr-4
-               z-50">
-        <div
-          class="bg-white/20 hover:bg-white/30
-                 transition rounded-l-full
-                 w-5 h-14 sm:w-6 sm:h-20
-                 flex items-center justify-center
-                 cursor-pointer">
-          <span class="text-white text-lg sm:text-2xl font-bold">&gt;</span>
+
+    <div class="absolute right-0 top-0 bottom-0 w-16 sm:w-24 lg:w-32 bg-gradient-to-l from-black via-black/60 to-transparent flex items-center justify-end pr-2 sm:pr-4 z-50 opacity-0 group-hover:opacity-100 transition-opacity">
+          <div class="bg-[#333]/80 hover:bg-[#444] transition rounded-xl sm:rounded-2xl w-6 h-16 sm:w-8 sm:h-24 flex items-center justify-center cursor-pointer border border-white/10">
+            <span class="text-white text-lg sm:text-2xl font-bold">&gt;</span>
+          </div>
         </div>
-      </div>
 
     </div>
   </div>
 </template>
 
 <style scoped>
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+  .line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
 </style>
