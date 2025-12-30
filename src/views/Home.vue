@@ -1,6 +1,7 @@
 <template>
    <div id="smooth-wrapper">
       <div id="smooth-content">
+         <PreLoader />
          <TelaInicial />
          <Centro />
           <MonsterParallax />
@@ -13,6 +14,7 @@
   
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import PreLoader from '@/modules/preloader/PreLoader.vue';
 import TelaInicial from '../modules/Inicio/TelaInicial.vue';
 import Centro from '../modules/Desenvolvimento/Centro.vue';
 import MonsterParallax from '../modules/Desenvolvimento/MonsterParallax.vue';
@@ -22,6 +24,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import Episodios from '@/modules/episodios/Episodio.vue';
+
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
