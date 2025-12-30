@@ -7,7 +7,7 @@
           <MonsterParallax />
           <Trailers />
           <Episodios />
-         <Footer />
+          <Footer />
       </div>
    </div>
 </template>
@@ -24,6 +24,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import Episodios from '@/modules/episodios/Episodio.vue';
+
 
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
