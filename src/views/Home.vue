@@ -2,10 +2,10 @@
    <div id="smooth-wrapper">
       <div id="smooth-content">
          <TelaInicial />
-         
-        
          <Centro />
           <MonsterParallax />
+          <Trailers />
+          <Episodios />
          <Footer />
       </div>
    </div>
@@ -16,10 +16,12 @@ import { onMounted } from 'vue';
 import TelaInicial from '../modules/Inicio/TelaInicial.vue';
 import Centro from '../modules/Desenvolvimento/Centro.vue';
 import MonsterParallax from '../modules/Desenvolvimento/MonsterParallax.vue';
-// import Footer from '../modules/footer/Footer.vue';
+import Trailers from '@/modules/trailer/Trailers.vue';
+import Footer from '../modules/footer/Footer.vue';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import Episodios from '@/modules/episodios/Episodio.vue';
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 

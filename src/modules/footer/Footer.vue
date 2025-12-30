@@ -6,7 +6,7 @@
    </footer>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .footer-section {
    position: relative;
    width: 100%;
@@ -30,4 +30,4 @@
    z-index: 2;
    box-sizing: border-box;
 }
-</style>
+</style> -->

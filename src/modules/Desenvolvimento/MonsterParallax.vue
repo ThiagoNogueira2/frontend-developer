@@ -270,7 +270,7 @@
         </div>
         <div class="md:w-1/2 md:flex md:justify-center md:items-center">
             <img
-                class="imgEvento w-full max-w-[720px] h-auto border border-white/8 animate-float"
+                class="imgEvento w-full max-w-[520px] h-auto border border-white/8 animate-float"
                 src="../../assets/images/dev-Thiago.jpeg"
                 alt="Imagem do DevThiago"
             />
