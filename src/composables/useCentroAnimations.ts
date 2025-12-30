@@ -13,7 +13,7 @@ export function useCentroAnimations() {
       isDesktop: "(min-width: 768px)",
       isMobile: "(max-width: 767px)"
     }, (context) => {
-      let { isDesktop, isMobile } = context.conditions;
+      const { isDesktop, isMobile } = context.conditions!;
 
       gsap.fromTo('.img-contraste',
         {
