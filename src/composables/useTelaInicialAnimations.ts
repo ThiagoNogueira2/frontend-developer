@@ -65,8 +65,7 @@ export function useTelaInicialAnimations() {
         delay: 1.5
       });
 
-      // 4. Parallax (O grande vilão do travamento)
-      // Reduzimos a força do parallax no mobile para evitar o "pulo"
+      // 4. Parallax (Otimizado para performance sem mudar comportamento visual)
       gsap.to('.bg1', {
         y: isMobile ? '10%' : '20%', 
         force3D: true, // Força uso da GPU
@@ -75,7 +74,7 @@ export function useTelaInicialAnimations() {
           trigger: '.sec1',
           start: 'top top',
           end: 'bottom top',
-          scrub: isMobile ? 1 : 0.5, // Scrub mais alto no mobile = mais suave
+          scrub: isMobile ? 1.2 : 0.5, // Levemente mais suave no mobile para melhor fluidez
           invalidateOnRefresh: true
         }
       });
@@ -88,7 +87,7 @@ export function useTelaInicialAnimations() {
           trigger: '.sec1',
           start: 'top top',
           end: 'bottom top',
-          scrub: isMobile ? 1 : 0.5,
+          scrub: isMobile ? 1.2 : 0.5, // Levemente mais suave no mobile para melhor fluidez
           invalidateOnRefresh: true
         }
       });

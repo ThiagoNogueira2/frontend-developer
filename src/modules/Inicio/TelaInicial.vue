@@ -69,3 +69,39 @@
     </div>
 </section>
 </template>
+
+<style scoped>
+/* Otimizações de performance para mobile - mantém comportamento visual */
+@media (max-width: 767px) {
+  .sec1 {
+    /* Força aceleração por hardware sem mudar visual */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .bg1,
+  .bg2 {
+    /* Otimiza renderização das imagens parallax */
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Melhora performance de renderização */
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  .texto-animado {
+    will-change: transform, opacity;
+  }
+}
+
+/* Otimizações gerais para GPU */
+.bg1,
+.bg2 {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+</style>
