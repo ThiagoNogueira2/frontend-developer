@@ -1,68 +1,157 @@
 <template>
-   <footer class="relative w-full min-h-[650px] md:min-h-[750px] flex items-start overflow-hidden pt-24 md:pt-44 pb-20 font-sans tracking-tight">
-     
-     <div class="absolute inset-0 -z-10">
-       <img 
-         src="../../assets/images/bg-footer.webp" 
-         alt="Background" 
-         class="w-full h-full object-cover scale-105" 
-       >
-       <div class="absolute inset-0 bg-black/40"></div>
-       <div class="absolute inset-0 bg-gradient-to-t from-[#0c0102] via-transparent to-black/20"></div>
-     </div>
- 
-     <div class="container mx-auto px-6 md:px-12 w-full">
-       <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-16 lg:gap-4 text-center lg:text-left">
-         
-         <div class="text-white max-w-2xl">
-           <p class="text-[10px] md:text-xs tracking-[0.5em] uppercase opacity-50 mb-6 font-medium">
-             DevThisgo # 2 EDIT
-           </p>
-           <h1 class="text-5xl sm:text-6xl lg:text-8xl font-black leading-[0.9] uppercase tracking-tighter italic">
-             Stranger <br> 
-             <span class="text-red-600 drop-shadow-[0_0_15px_rgba(220,38,38,0.5)]">Things</span>
-           </h1>
-         </div>
- 
-         <div class="flex flex-col sm:flex-row lg:flex-nowrap gap-12 lg:gap-20 items-center lg:items-start pt-6">
-           
-           <div class="flex flex-col gap-6 items-center lg:items-start">
-             <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-white/40">Conecte-se</span>
-             <div class="flex gap-6">
-               <a href="#" class="group transition-all duration-300">
-                 <img 
-                   src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" 
-                   alt="TikTok" 
-                   class="w-5 h-5 brightness-0 invert opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all"
-                 >
-               </a>
-               </div>
-           </div>
- 
-           <div class="flex flex-col gap-6 w-full max-w-[320px] items-center lg:items-start">
-             <span class="text-[10px] font-bold tracking-[0.4em] uppercase text-white/40">Dúvidas</span>
-             <button class="group relative flex items-center justify-between bg-white/[0.03] backdrop-blur-xl px-10 py-5 text-white border border-white/10 transition-all duration-700 hover:bg-white hover:text-black w-full overflow-hidden">
-               <span class="text-[10px] font-bold tracking-[0.2em] uppercase">Suporte Whatsapp</span>
-               <svg
-                 xmlns="http://www.w3.org/2000/svg"
-                 width="14"
-                 height="14"
-                 viewBox="0 0 16 16"
-                 fill="none"
-                 class="transition-transform duration-700 group-hover:rotate-[16deg] group-hover:translate-x-1"
-               >
-                 <path
-                   d="M2 14L14 2M14 2H2M14 2V14"
-                   stroke="currentColor"
-                   stroke-width="2"
-                 />
-               </svg>
-               <div class="absolute bottom-0 left-0 w-0 h-[1px] bg-red-600 transition-all duration-700 group-hover:w-full"></div>
-             </button>
-           </div>
- 
-         </div>
-       </div>
-     </div>
-   </footer>
- </template>
+  <footer class="relative w-full overflow-hidden font-sans tracking-tight">
+    
+    <!-- Background -->
+    <div class="absolute inset-0 -z-10">
+      <img 
+        src="../../assets/images/bg-footer.webp" 
+        alt="Background" 
+        class="w-full h-full object-cover" 
+      >
+      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#0c0102] via-black/50 to-transparent"></div>
+    </div>
+
+    <div class="container mx-auto px-6 md:px-12 py-6 md:py-16">
+      
+      <!-- Top Section: Brand + Navigation Horizontal -->
+      <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-6 md:gap-10 lg:gap-16">
+        
+        <!-- Brand + Social -->
+        <div class="flex-shrink-0 text-center lg:text-left w-full lg:w-auto">
+          <h2 class="text-5xl md:text-6xl font-black leading-[0.85] uppercase tracking-tighter italic mb-4 md:mb-6">
+            <span class="text-white">Stranger</span> <br> 
+            <span class="text-red-600 drop-shadow-[0_0_20px_rgba(220,38,38,0.6)]">Things</span>
+          </h2>
+          
+          <!-- Social Media -->
+          <div class="flex gap-3 justify-center lg:justify-start">
+            <a href="#" class="group" aria-label="Instagram">
+              <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-600/50">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="group" aria-label="TikTok">
+              <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-600/50">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="group" aria-label="GitHub">
+              <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-600/50">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+            </a>
+            <a href="#" class="group" aria-label="LinkedIn">
+              <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-600/50">
+                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Grid Horizontal -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-5 md:gap-x-12 md:gap-y-8 flex-1 max-w-4xl w-full">
+          
+          <!-- Navegação -->
+          <div class="text-center lg:text-left">
+            <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Navegação</h3>
+            <ul class="space-y-2 md:space-y-2.5">
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Início
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Episódios
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Galeria
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Sobre
+              </a></li>
+            </ul>
+          </div>
+
+          <!-- Recursos -->
+          <div class="text-center lg:text-left">
+            <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Recursos</h3>
+            <ul class="space-y-2 md:space-y-2.5">
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Tutoriais
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Blog
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                API
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Docs
+              </a></li>
+            </ul>
+          </div>
+
+          <!-- Suporte -->
+          <div class="text-center lg:text-left">
+            <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Suporte</h3>
+            <ul class="space-y-2 md:space-y-2.5">
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                FAQ
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Contato
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Status
+              </a></li>
+              <li><a href="#" class="text-sm text-white/70 hover:text-white transition-colors duration-200 inline-flex items-center group justify-center lg:justify-start">
+                <span class="w-0 group-hover:w-3 h-px bg-red-600 transition-all duration-300 mr-0 group-hover:mr-2"></span>
+                Comunidade
+              </a></li>
+            </ul>
+          </div>
+
+          <!-- Contato -->
+          <div class="text-center lg:text-left flex flex-col items-center lg:items-start">
+            <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Contato</h3>
+            <div class="space-y-2.5 md:space-y-3 flex flex-col items-center lg:items-start">
+              <a href="mailto:contato@devthisgo.com" class="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors group">
+                <svg class="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <span class="text-xs">Email</span>
+              </a>
+              <a href="#" class="group relative inline-flex items-center justify-center gap-2 bg-red-600/10 border border-red-600/30 backdrop-blur-xl px-4 py-2 md:px-5 md:py-2.5 text-white transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:shadow-lg hover:shadow-red-600/50 overflow-hidden">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span class="text-[10px] font-bold tracking-[0.2em] uppercase">WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </footer>
+</template>

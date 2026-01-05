@@ -36,6 +36,45 @@ import { onMounted } from "vue";
 import { gsap } from "gsap";
 
 onMounted(() => {
+  // Função para bloquear eventos de scroll
+  const preventScroll = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    return false;
+  };
+  
+  // Bloqueia o scroll durante o preloader
+  document.body.style.overflow = "hidden";
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
+  
+  const smoothWrapper = document.getElementById("smooth-wrapper");
+  const smoothContent = document.getElementById("smooth-content");
+  
+  if (smoothWrapper) {
+    smoothWrapper.style.overflow = "hidden";
+    smoothWrapper.style.height = "100vh";
+    smoothWrapper.style.touchAction = "none";
+  }
+  
+  if (smoothContent) {
+    smoothContent.style.pointerEvents = "none";
+  }
+  
+  // Bloqueia eventos de scroll
+  window.addEventListener("wheel", preventScroll, { passive: false });
+  window.addEventListener("touchmove", preventScroll, { passive: false });
+  window.addEventListener("scroll", preventScroll, { passive: false });
+  
+  // Pausa o ScrollSmoother se existir
+  let smoother = null;
+  if (window.ScrollSmoother) {
+    smoother = window.ScrollSmoother.get();
+    if (smoother) {
+      smoother.paused(true);
+    }
+  }
+  
   const tl = gsap.timeline({
     onComplete() {
       gsap.to("#preloader", {
@@ -44,6 +83,31 @@ onMounted(() => {
         onComplete: () => {
           const el = document.getElementById("preloader");
           if (el) el.style.display = "none";
+          
+          // Remove listeners de scroll
+          window.removeEventListener("wheel", preventScroll);
+          window.removeEventListener("touchmove", preventScroll);
+          window.removeEventListener("scroll", preventScroll);
+          
+          // Libera o scroll após o preloader desaparecer
+          document.body.style.overflow = "";
+          document.body.style.position = "";
+          document.body.style.width = "";
+          
+          if (smoothWrapper) {
+            smoothWrapper.style.overflow = "";
+            smoothWrapper.style.height = "";
+            smoothWrapper.style.touchAction = "";
+          }
+          
+          if (smoothContent) {
+            smoothContent.style.pointerEvents = "";
+          }
+          
+          // Reabilita o ScrollSmoother
+          if (smoother) {
+            smoother.paused(false);
+          }
         },
       });
     },
