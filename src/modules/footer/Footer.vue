@@ -1,7 +1,7 @@
 <template>
   <footer class="relative w-full overflow-hidden font-sans tracking-tight">
     
-    <!-- Background -->
+
     <div class="absolute inset-0 -z-10">
       <img 
         src="../../assets/images/bg-footer.webp" 
@@ -14,17 +14,17 @@
 
     <div class="container mx-auto px-6 md:px-12 py-6 md:py-16">
       
-      <!-- Top Section: Brand + Navigation Horizontal -->
+  
       <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-6 md:gap-10 lg:gap-16">
         
-        <!-- Brand + Social -->
+   
         <div class="flex-shrink-0 text-center lg:text-left w-full lg:w-auto">
           <h2 class="text-5xl md:text-6xl font-black leading-[0.85] uppercase tracking-tighter italic mb-4 md:mb-6">
             <span class="text-white">Stranger</span> <br> 
             <span class="text-red-600 drop-shadow-[0_0_20px_rgba(220,38,38,0.6)]">Things</span>
           </h2>
           
-          <!-- Social Media -->
+         
           <div class="flex gap-3 justify-center lg:justify-start">
             <a href="#" class="group" aria-label="Instagram">
               <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-red-600 group-hover:border-red-600 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-600/50">
@@ -57,10 +57,10 @@
           </div>
         </div>
 
-        <!-- Navigation Grid Horizontal -->
+    
         <div class="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-5 md:gap-x-12 md:gap-y-8 flex-1 max-w-4xl w-full">
           
-          <!-- Navegação -->
+     
           <div class="text-center lg:text-left">
             <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Navegação</h3>
             <ul class="space-y-2 md:space-y-2.5">
@@ -83,7 +83,7 @@
             </ul>
           </div>
 
-          <!-- Recursos -->
+       
           <div class="text-center lg:text-left">
             <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Recursos</h3>
             <ul class="space-y-2 md:space-y-2.5">
@@ -106,7 +106,7 @@
             </ul>
           </div>
 
-          <!-- Suporte -->
+        
           <div class="text-center lg:text-left">
             <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Suporte</h3>
             <ul class="space-y-2 md:space-y-2.5">
@@ -129,7 +129,7 @@
             </ul>
           </div>
 
-          <!-- Contato -->
+     
           <div class="text-center lg:text-left flex flex-col items-center lg:items-start">
             <h3 class="text-[9px] font-bold tracking-[0.35em] uppercase text-red-600/80 mb-3 md:mb-4">Contato</h3>
             <div class="space-y-2.5 md:space-y-3 flex flex-col items-center lg:items-start">

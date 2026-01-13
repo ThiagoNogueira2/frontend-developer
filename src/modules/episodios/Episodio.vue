@@ -10,7 +10,7 @@
         <div class="flex flex-nowrap gap-3 sm:gap-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory transition-transform duration-500"
              style="scrollbar-width: none; -ms-overflow-style: none;">
           
-          <!-- CARD 1 -->
+      
           <div class="w-[260px] h-[320px] sm:w-[290px] sm:h-[350px] lg:w-[327px] lg:h-[387px] bg-[#1f1f1f] rounded-[0.75rem] sm:rounded-[1rem] p-2 sm:p-[10px] flex flex-col items-center shrink-0 shadow-lg snap-start">
             <div class="relative w-full h-[140px] sm:h-[155px] lg:h-[172px] shrink-0">
               <img src="/src/assets/images/episodio1.webp" class="w-full h-full object-cover rounded-[0.8rem] sm:rounded-[1rem] lg:rounded-[1.2rem]" />
@@ -22,7 +22,7 @@
             </div>
           </div>
   
-          <!-- CARD 2 -->
+   
           <div class="w-[260px] h-[320px] sm:w-[290px] sm:h-[350px] lg:w-[327px] lg:h-[387px] bg-[#1f1f1f] rounded-[0.75rem] sm:rounded-[1rem] p-2 sm:p-[10px] flex flex-col items-center shrink-0 shadow-lg snap-start">
             <div class="relative w-full h-[140px] sm:h-[155px] lg:h-[172px] shrink-0">
               <img src="/src/assets/images/episodio2.webp" class="w-full h-full object-cover rounded-[0.8rem] sm:rounded-[1rem] lg:rounded-[1.2rem]" />
@@ -34,7 +34,7 @@
             </div>
           </div>
   
-          <!-- CARD 3 -->
+    
           <div class="w-[260px] h-[320px] sm:w-[290px] sm:h-[350px] lg:w-[327px] lg:h-[387px] bg-[#1f1f1f] rounded-[0.75rem] sm:rounded-[1rem] p-2 sm:p-[10px] flex flex-col items-center shrink-0 shadow-lg snap-start">
             <div class="relative w-full h-[140px] sm:h-[155px] lg:h-[172px] shrink-0">
               <img src="/src/assets/images/episodio3.webp" class="w-full h-full object-cover rounded-[0.8rem] sm:rounded-[1rem] lg:rounded-[1.2rem]" />
@@ -46,7 +46,7 @@
             </div>
           </div>
   
-          <!-- CARD 4 -->
+         
           <div class="w-[260px] h-[320px] sm:w-[290px] sm:h-[350px] lg:w-[327px] lg:h-[387px] bg-[#1f1f1f] rounded-[0.75rem] sm:rounded-[1rem] p-2 sm:p-[10px] flex flex-col items-center shrink-0 shadow-lg snap-start">
             <div class="relative w-full h-[140px] sm:h-[155px] lg:h-[172px] shrink-0">
               <img src="/src/assets/images/episodio4.webp" class="w-full h-full object-cover rounded-[0.8rem] sm:rounded-[1rem] lg:rounded-[1.2rem]" />
@@ -58,7 +58,7 @@
             </div>
           </div>
   
-          <!-- CARD 5 (ESMAECIDO) -->
+         
           <div class="w-[260px] h-[320px] sm:w-[290px] sm:h-[350px] lg:w-[327px] lg:h-[387px] bg-[#1f1f1f] rounded-[0.75rem] sm:rounded-[1rem] p-2 sm:p-[10px] flex flex-col items-center shrink-0 shadow-lg opacity-60 snap-start">
             <div class="relative w-full h-[140px] sm:h-[155px] lg:h-[172px] shrink-0">
               <img src="/src/assets/images/episodio5.webp" class="w-full h-full object-cover rounded-[0.8rem] sm:rounded-[1rem] lg:rounded-[1.2rem] grayscale" />
@@ -71,7 +71,7 @@
   
         </div>
   
-        <!-- SETA -->
+   
         <div class="absolute right-0 top-0 bottom-0 w-16 sm:w-24 lg:w-32 bg-gradient-to-l from-black via-black/60 to-transparent flex items-center justify-end pr-2 sm:pr-4 z-50 opacity-0 group-hover:opacity-100 transition-opacity">
           <div class="bg-[#333]/80 hover:bg-[#444] transition rounded-xl sm:rounded-2xl w-6 h-16 sm:w-8 sm:h-24 flex items-center justify-center cursor-pointer border border-white/10">
             <span class="text-white text-lg sm:text-2xl font-bold">&gt;</span>
