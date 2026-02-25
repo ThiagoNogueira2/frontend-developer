@@ -2,8 +2,10 @@
   <div class="p-4 sm:p-6 lg:p-10 text-white font-sans">
 
     <h1 class="max-w-[1440px] mx-auto
+
                text-2xl sm:text-3xl lg:text-4xl
-               font-bold pt-4 sm:pt-6  ">
+               
+               font-bold pt-4 sm:pt-6  "> 
       Trailers
     </h1>
 
