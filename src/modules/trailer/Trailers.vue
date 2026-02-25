@@ -3,10 +3,7 @@
 
     <h1 class="max-w-[1440px] mx-auto
                text-2xl sm:text-3xl lg:text-4xl
-               font-bold pt-4 sm:pt-5  ">
-
-
-
+               font-bold pt-4 sm:pt-6  ">
       Trailers
     </h1>
 
