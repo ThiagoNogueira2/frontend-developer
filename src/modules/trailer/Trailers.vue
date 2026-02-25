@@ -3,7 +3,10 @@
 
     <h1 class="max-w-[1440px] mx-auto
                text-2xl sm:text-3xl lg:text-4xl
-               font-bold pt-4 sm:pt-6">
+               font-bold pt-4 sm:pt-6  ">
+
+
+
       Trailers
     </h1>
 
@@ -11,7 +14,7 @@
     <div class="relative max-w-[1440px] mx-auto pt-4 sm:pt-6">
 
       <div class="flex flex-nowrap gap-3 sm:gap-4
-               overflow-x-auto scrollbar-hide scroll-smooth
+               overflow-x-auto   scrollbar-hide scroll-smooth
                snap-x snap-mandatory" style="scrollbar-width:none; -ms-overflow-style:none;">
 
 
@@ -27,7 +30,7 @@
               </svg>
             </div>
             <div
-              class="absolute bottom-2 sm:bottom-3 right-2 sm:right-3 bg-black/70 text-white text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded z-20">
+              class="absolute bottom-2  sm:bottom-3  right-2 sm:right-3 bg-black/70 text-white text-[10px] sm:text-xs px-1.5 sm:px-2 py-0.5 sm:py-1 rounded z-20">
               28s
             </div>
           </div>
